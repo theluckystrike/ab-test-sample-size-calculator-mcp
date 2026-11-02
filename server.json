@@ -1,0 +1,10 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.theluckystrike/ab-test-sample-size-calculator-mcp",
+  "title": "A/B Test Sample Size Calculator MCP",
+  "description": "Exact A/B test sample size, duration, z-test, chi-square, Fisher and Fisher-Freeman-Halton, peeking risk.",
+  "version": "1.0.0",
+  "websiteUrl": "https://abwex.com/tools/sample-size-calculator.html",
+  "repository": { "url": "https://github.com/theluckystrike/ab-test-sample-size-calculator-mcp", "source": "github" },
+  "remotes": [{ "type": "streamable-http", "url": "https://ab-test-sample-size-calculator-mcp.lipmichal.workers.dev/mcp" }]
+}

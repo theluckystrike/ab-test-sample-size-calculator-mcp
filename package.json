@@ -1,0 +1,57 @@
+{
+  "name": "ab-test-sample-size-calculator-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for exact A/B test statistics: sample size, duration, z-test, chi-square, Fisher exact and Fisher-Freeman-Halton tests, peeking risk.",
+  "type": "module",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "mcpName": "io.github.theluckystrike/ab-test-sample-size-calculator-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theluckystrike/ab-test-sample-size-calculator-mcp"
+  },
+  "homepage": "https://abwex.com/tools/sample-size-calculator.html",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "claude",
+    "ab-testing",
+    "ab-test-calculator",
+    "sample-size-calculator",
+    "statistical-significance",
+    "fisher-exact-test",
+    "fisher-freeman-halton",
+    "chi-square",
+    "power-analysis",
+    "sequential-testing",
+    "experimentation",
+    "conversion-rate"
+  ],
+  "bin": {
+    "ab-test-sample-size-calculator-mcp": "dist/stdio.js"
+  },
+  "main": "dist/stdio.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test",
+    "start": "node dist/stdio.js",
+    "deploy": "npx wrangler@4 deploy"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
